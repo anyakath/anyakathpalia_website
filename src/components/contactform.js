@@ -1,5 +1,4 @@
 import React , {useState} from 'react'
-import { Formik } from "formik"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { BigText, contactButton, Text2, Space2, SmallCarte, Text4, Colors, Space4, LinkStyle} from "../ss"

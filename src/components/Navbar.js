@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {Navig, mainLogo, Text2, Text3, NavLink, Text, NavSpace, Text1, LinkStyle, Colors} from '../ss'
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHouse} from '@fortawesome/free-solid-svg-icons';
 

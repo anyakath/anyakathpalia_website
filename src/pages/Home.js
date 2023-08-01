@@ -1,6 +1,5 @@
 import React from 'react'
 import { testext , Space, Space3, Image, TextSpace, TextBanner, Text1, Text2, Text3, Text4, Colors, Card, FrontCard, SmallCarte, BigText, MainSpace, ReelSpace, Box, Text5, Space2, LinkStyle} from '../ss'
-import Collapsible from 'react-collapsible';
 import {Link} from "react-router-dom";
 
 import Profile from "../assets/profile.jpg";

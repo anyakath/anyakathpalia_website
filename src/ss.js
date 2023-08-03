@@ -408,20 +408,6 @@ export const TextSpace = styled.div `
     height: 40%;
 `
 
-// export const Image= styled.div `
-    
-//     background-image: url(${anya});
-//     background-size: 300px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     width:  45%;
-//     height: 45%;
-// `
-
-
-
-
-
 export const Text1 = styled.text `
     font-size: 38px;
     padding: 10px;
@@ -646,4 +632,31 @@ export const LinkStyle = styled.a `
     }
     // marginTop: '400px';
     // position: 'absolute';
+`
+
+export const ErrorIcon = styled.div `
+   
+    display: flex ;    
+    justify-content: center;
+    vertical-align: middle;
+    width: 0.5vw;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d; 
+    &:hover{
+        transform: scale(1.125);
+    }
+
+`
+
+export const MobileSpace = styled.div `
+    display: flex ;
+    align-items: center;
+    flex-direction: ${(props) => props.direc? props.direc: 'column' };
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    background-color: ${Colors.black};
+    justify-content: center;
+    vertical-align: middle;
+    height: 100vh;
 `

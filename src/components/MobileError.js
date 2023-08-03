@@ -9,7 +9,7 @@ export default function MobileError() {
         <ErrorIcon>
           <FontAwesomeIcon icon={faCode} color = {Colors.grey2} size="5x" />
           </ErrorIcon>
-        <Text2>
+        <Text2 size = '18px'>
             <br/>
             Hi there! <br/> The mobile version of this website is unavailable at the moment. 
             Please access the portfolio through your desktop.

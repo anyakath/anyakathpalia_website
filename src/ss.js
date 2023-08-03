@@ -652,8 +652,8 @@ export const MobileSpace = styled.div `
     display: flex ;
     align-items: center;
     flex-direction: ${(props) => props.direc? props.direc: 'column' };
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     background-color: ${Colors.black};
     justify-content: center;

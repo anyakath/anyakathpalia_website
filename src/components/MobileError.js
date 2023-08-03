@@ -7,7 +7,7 @@ export default function MobileError() {
     <MobileSpace>
         <br/> 
         <ErrorIcon>
-          <FontAwesomeIcon icon={faCode} color = {Colors.grey2} size="8x" />
+          <FontAwesomeIcon icon={faCode} color = {Colors.grey2} size="5x" />
           </ErrorIcon>
         <Text2>
             <br/>

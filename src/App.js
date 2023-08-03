@@ -1,13 +1,12 @@
 import './App.css';
 import Navbar from "./components/Navbar";
-
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home.js"
 import * as React from 'react';
-// import Contact from './pages/Contact';
+import { isMobile } from "react-device-detect";
 import TechForGood from './pages/TechForGood'; 
 import Projects from './pages/Projects'; 
-import { MainSpace } from './ss';
+import MobileError from '../src/components/MobileError';
 
 import { createGlobalStyle } from 'styled-components'
 
@@ -17,10 +16,18 @@ const GlobalStyle = createGlobalStyle `
     padding: 0;
   }
 `
-function App() {
-  return (
+
+function MobileVersion () {
+  return(
+    <MobileError/>
+  )
+}
+
+
+function DesktopVersion() {
+    return (
     <>
-  <GlobalStyle />
+    <GlobalStyle />
     <>
       <Router>
         <Navbar />
@@ -33,6 +40,16 @@ function App() {
     </>
     </>
     );
+
+}
+
+function App() {
+  console.log('reached here')
+  if (isMobile){
+    return <MobileVersion/>
+  } else {
+    return <DesktopVersion/>
+  }
 }
 
 

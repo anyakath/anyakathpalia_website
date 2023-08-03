@@ -19,7 +19,10 @@ const GlobalStyle = createGlobalStyle `
 
 function MobileVersion () {
   return(
+     <>
+    <GlobalStyle />
     <MobileError/>
+    </>
   )
 }
 
